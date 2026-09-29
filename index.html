@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebCraft</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #000; font-family: monospace; }
+    #game { display: block; width: 100vw; height: 100vh; }
+    #hud { position: fixed; left: 8px; top: 8px; color: #fff; text-shadow: 1px 1px #000;
+           white-space: pre; pointer-events: none; font-size: 13px; }
+    #cross { position: fixed; left: 50%; top: 50%; width: 4px; height: 4px; margin: -2px;
+             background: #fff; mix-blend-mode: difference; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="hud"></div>
+  <div id="cross"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
